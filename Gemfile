@@ -16,6 +16,6 @@ group :assets do
 end
 
 gem 'geocoder'
-# gem 'sendgrid'
+gem 'sendgrid'
 gem 'jquery-rails'
 gem 'backbone-on-rails'
