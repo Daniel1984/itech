@@ -1,25 +1,30 @@
 .home-container {
   clear: left;
-  margin-top: 200px;
+  margin-top: @homeContainerMarginTop;
   text-align: center;
   h1 {
-    font-weight: 900;
-    color: @navbarLinkColor;
-    font-size: 60px;
-    line-height: 50px;
-    margin-bottom: 30px;
+    font-weight: @homeContainerH1FontWeight;
+    color: @white;
+    font-size: @homeContainerH1FontSize;
+    line-height: @homeContainerH1LineHeight;
+    margin-bottom: @homeContainerH1MarginBottom;
   }
   h3 {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 30px;
+    font-weight: @homeContainerH3FontWeight;
+    font-size: @homeContainerH3FontSize;
+    line-height: @homeContainerH3LineHeight;
     color: @white;
   }
   form {
-    margin-top: 40px;
+    margin-top: @homeContainerFormMarginTop;
+  }
+  label {
+    color: @white;
+    font-weight: @homeContainerLabelFontWeight;
+    font-size: @homeContainerLabelFontSize;
   }
   input {
-    padding: 10px;
+    padding: @homeContainerInputPadding;
     display: inline-block;
     .border-radius(5px 0 0 5px);
   }
@@ -29,4 +34,22 @@
     .border-radius(0 5px 5px 0);
     margin-left: -5px;
   }
+  /*.learn-more {
+      margin: 80px auto 0 auto;
+      color: @white;
+      a {
+        color: @white;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+      i {
+        font-size: 45px;
+        font-weight: 800;
+      }
+    }*/
 }

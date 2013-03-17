@@ -1,21 +1,12 @@
 @import "twitter/bootstrap/bootstrap";
 
 body {
-
+  background: url(bg2.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
-// taken from http://paulmason.name/item/full-screen-background-image-pure-css-code
-#full-screen-background-image {
-  z-index: -999;
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 
 @import "twitter/bootstrap/responsive";
 
@@ -38,3 +29,25 @@ body {
 @import "variables/base";
 @import "modules/navbar/base";
 @import "modules/home/base";
+@import "modules/services/base";
+
+.learn-more {
+  margin: 80px auto 0 auto;
+  color: @white;
+  width: 125px;
+  text-align: center;
+  a {
+    color: @white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+  i {
+    font-size: 45px;
+    font-weight: 800;
+  }
+}

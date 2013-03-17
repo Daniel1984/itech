@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'pg'
-gem "mobile-fu"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,5 +15,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'geocoder'
+gem 'sendgrid'
 gem 'jquery-rails'
 gem 'backbone-on-rails'
