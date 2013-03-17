@@ -46,10 +46,10 @@ test:
   username:
   password:
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: itech_production
-  pool: 5
-  username:
-  password:
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: itech_production
+#   pool: 5
+#   username:
+#   password:
