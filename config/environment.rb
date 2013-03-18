@@ -4,9 +4,10 @@ require File.expand_path('../application', __FILE__)
 # Initialize the rails application
 Itech::Application.initialize!
 
-SENDGRID_PASSWORD = 'DSvril4ezv'
-SENDGRID_USERNAME = 'itechio'
-
+# SENDGRID_PASSWORD = 'DSvril4ezv'
+# SENDGRID_USERNAME = 'itechio'
+SENDGRID_PASSWORD = 'ig04kw9j'
+SENDGRID_USERNAME = 'app13185324@heroku.com'
 ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.sendgrid.net',
   :port           => '587',
