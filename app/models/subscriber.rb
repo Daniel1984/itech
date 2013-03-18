@@ -1,7 +1,8 @@
 class Subscriber < ActiveRecord::Base
   attr_accessible :email
 
-  validates_presence_of :email
-  validates_uniqueness_of :email
+  validates :email,    
+            :uniqueness => { :message => "This email is subscribed!" },
+            :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, :message => "Please enter valid email!" }
   
 end

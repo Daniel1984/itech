@@ -4,7 +4,8 @@ window.Itech =
   Views: {}
   Routers: {}
   initialize: -> 
-    d = new Itech.Views.SubscriptionIndexView()
+    new Itech.Views.SubscriptionIndexView()
 
 $(document).ready ->
   Itech.initialize()
+  @
