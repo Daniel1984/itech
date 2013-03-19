@@ -18,30 +18,35 @@ class Itech.Views.SubscriptionIndexView extends Backbone.View
     
   handleSubscription: (e) =>
     e.preventDefault()
-    @btnSubmit.attr('disabled': true)
-    @inputField.attr('disabled': true)
+    @toggleInputAndBtn(true)
     @btnSpinner.show()
     @btnRss.hide()
     @subscriber.set(email: @inputField.val())
     @subscriber.save()
     
   clearField: (e) =>
-    e.preventDefault()
+    e?.preventDefault()
     @ctrlGroup.removeClass('error')
     @ctrlGroup.removeClass('success')
     @inputField.val('')
     
   success: =>
+    @subscriber.clear()
     @btnSpinner.hide()
     @btnRss.show()
+    @toggleInputAndBtn(false)
     @ctrlGroup.addClass('success')
     @inputField.val('Thank you for subscribing!')
     
   error: (model, err) =>
-    @btnSubmit.attr('disabled': false)
-    @inputField.attr('disabled': false)
+    @toggleInputAndBtn(false)
     @btnSpinner.hide()
     @btnRss.show()
     errorMsg = $.parseJSON(err.responseText).email[0]
+    @ctrlGroup.removeClass('success')
     @ctrlGroup.addClass('error')
     @inputField.val(errorMsg)
+    
+  toggleInputAndBtn: (bullean) =>
+    @btnSubmit.attr('disabled': bullean)
+    @inputField.attr('disabled': bullean)
