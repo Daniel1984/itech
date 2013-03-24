@@ -13,7 +13,33 @@
 	.row {
 		margin-bottom: 40px;
 	}
-	img, iframe {
+	.span4, iframe {
 		.box-shadow(0 5px 10px rgba(0,0,0,.5));
+	}
+	.span4 {
+		position: relative;
+	}
+	.backdrop {
+		position: absolute;
+		.transition(all .3s ease-in-out 0s);
+		cursor: pointer;
+		width: 100%;
+		height: 100%;
+		i {
+			display: none;
+			color: @navbarLinkColor;
+			font-size: 50px;
+			margin: -25px 0 0 -30px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+		}
+		&:hover {
+			background: black;
+			background: rgba(0,0,0,0.8);
+			i {
+				display: block;
+			}
+		}
 	}
 }
