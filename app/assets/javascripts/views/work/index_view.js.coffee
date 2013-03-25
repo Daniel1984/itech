@@ -14,29 +14,39 @@ class Itech.Views.WorkIndexView extends Backbone.View
 
 	showSscInfo: (e) =>
 		e.preventDefault()
-		console.log 'ssc info'
+		sscModel = new Itech.Models.Ssc()
+		@renderModalView(sscModel)
 
 	showTopNewsInfo: (e) =>
 		e.preventDefault()
-		console.log 'news info'
+		topNewsModel = new Itech.Models.TopNews()
+		@renderModalView(topNewsModel)
 
 	showTalkToMeInfo: (e) =>
 		e.preventDefault()
-		console.log 'talk to me'
+		talkToMeModel = new Itech.Models.TalkToMe()
+		@renderModalView(talkToMeModel)
 
 	showAvismaInfo: (e) =>
 		e.preventDefault()
-		console.log 'avisma'
+		avismaModel = new Itech.Models.Avisma()
+		@renderModalView(avismaModel)
 
 	showBizmagicInfo: (e) =>
 		e.preventDefault()
-		console.log 'bizmagic'
+		bizlogicModel = new Itech.Models.Bizlogic()
+		@renderModalView(bizlogicModel)
 
 	showRomastaInfo: (e) =>
 		e.preventDefault()
-		console.log 'romasta'
+		romastaModel = new Itech.Models.Romasta()
+		@renderModalView(romastaModel)
 
 	showBetaInfo: (e) =>
 		e.preventDefault()
-		console.log 'betainfo'
+		betaModel = new Itech.Models.Beta()
+		@renderModalView(betaModel)		
 
+	renderModalView: (model) =>
+		modal = new Itech.Views.SupportModalView(model: model)
+		@$el.append(modal.el)
