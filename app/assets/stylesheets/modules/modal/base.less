@@ -1,5 +1,18 @@
 .modal {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	.modal-header {
+		border-bottom: @modalBorderBottom;
+	}
 	.close {
 		color: @navbarLinkColor;
+	}
+	.modal-footer {
+		display: @modalFooterDisplay;
+	}
+	.modal-body {
+		max-height: @modalBodyHeight;
 	}
 }

@@ -17,35 +17,35 @@
 		position: relative;
 		cursor: pointer;
 		margin-bottom: 20px;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		a {
+			position: absolute;
+			.transition(all .3s ease-in-out 0s);
+			width: 100%;
+			height: 100%;
+			i {
+				display: none;
+				color: @navbarLinkColor;
+				font-size: 50px;
+				margin: -25px 0 0 -25px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+			}
+			&:hover {
+				text-decoration: none;
+				background-color: black;
+				background-color: rgba(0,0,0,0.8);
+				i {
+					display: block;
+				}
+			}
+		}
 	}
 	img, iframe {
 		.box-shadow(0 5px 10px rgba(0,0,0,.5));
-	}
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-	a {
-		position: absolute;
-		.transition(all .3s ease-in-out 0s);
-		width: 100%;
-		height: 100%;
-		i {
-			display: none;
-			color: @navbarLinkColor;
-			font-size: 50px;
-			margin: -25px 0 0 -25px;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-		}
-		&:hover {
-			text-decoration: none;
-			background-color: black;
-			background-color: rgba(0,0,0,0.8);
-			i {
-				display: block;
-			}
-		}
 	}
 }
