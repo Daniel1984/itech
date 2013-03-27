@@ -4,7 +4,7 @@ class Itech.Models.Avisma extends Backbone.Model
 		title: "Avisma"
 		imgUrl: "assets/work/avisma.png"
 		siteUrl	: "http://www.avisma.lt/index.php"
-		tools	: ["blah", "blah", "blah", "blah", "blah"]
+		tools	: ["Javascript", "Jquery", "PHP", "Mysql", "Apache"]
 		about	: "
 			Nuzen text
 		"

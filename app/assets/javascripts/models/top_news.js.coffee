@@ -4,7 +4,7 @@ class Itech.Models.TopNews extends Backbone.Model
 		title: "Top News"
 		imgUrl: "assets/work/top_news.png"
 		siteUrl	: "http://top-naujienos.herokuapp.com"
-		tools	: ["Backbone.js", "Node.js", "Express.js", "Github", "Heroku"]
+		tools	: ["Backbone.js", "Require.js", "Node.js", "Express.js", "Github", "Heroku"]
 		about	: "
 			Tool, gathering the latest articles
 			from most popular Lithuanian news portals.

@@ -4,7 +4,7 @@ class Itech.Models.Beta extends Backbone.Model
 		title: "Beta"
 		imgUrl: "assets/work/beta.png"
 		siteUrl	: "http://www.beta.lt"
-		tools	: ["blah", "blah", "blah", "blah", "blah"]
+		tools	: ["Javascript", "Jquery", "PHP", "Mysql", "Apache"]
 		about	: "
 			Nuzen text
 		"

@@ -4,7 +4,7 @@ class Itech.Models.Romasta extends Backbone.Model
 		title: "Romasta"
 		imgUrl: "assets/work/romasta.png"
 		siteUrl	: "http://www.romasta.lt/"
-		tools	: ["blah", "blah", "blah", "blah", "blah"]
+		tools	: ["Javascript", "Jquery", "PHP", "Mysql", "Apache"]
 		about	: "
-			Nuzen text
+			Wholesale and retail sales of truck parts.	
 		"

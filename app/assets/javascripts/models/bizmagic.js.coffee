@@ -4,7 +4,7 @@ class Itech.Models.Bizlogic extends Backbone.Model
 		title: "Bizlogic"
 		imgUrl: "assets/work/bizlogic.png"
 		siteUrl	: "http://www.bizlogic.lt"
-		tools	: ["blah", "blah", "blah", "blah", "blah"]
+		tools	: ["Javascript", "Jquery", "PHP", "Mysql", "Apache"]
 		about	: "
-			Nuzen text
+			Customer Relationship Management system / Business Management System.	
 		"
