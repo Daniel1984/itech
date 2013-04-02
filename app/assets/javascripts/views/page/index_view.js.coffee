@@ -28,4 +28,4 @@ class Itech.Views.PageIndexView extends Backbone.View
 	slidePage: (destination, offsetY) ->
 	  $('body').animate({
 		  scrollTop: destination.offset().top + offsetY
-    }, 1000)
+    }, 600)
