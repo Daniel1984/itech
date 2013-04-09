@@ -6,6 +6,7 @@ class Itech.Views.SupportErrorView extends Backbone.View
 
 	initialize: (options) ->
 		@el = options.el
+		
 		@$el.find('.error').removeClass('error')
 		@disableSubmit(true)
 		@errors = $.parseJSON(options.error.responseText)
