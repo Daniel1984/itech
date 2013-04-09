@@ -23,7 +23,7 @@ Itech::Application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "aciddaniel@gmail.com",
-    password: "DSvril4ezv"
+    password: "DSvril5ezv"
   }
 
   # Print deprecation notices to the Rails logger
