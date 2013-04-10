@@ -54,8 +54,8 @@ class Itech.Views.ContactIndexView extends Backbone.View
 
 	notifyUserAboutSuccess: =>
 		@$el.find('.btn-danger').removeClass('btn-danger').addClass('btn-success')
-		@$el.find('.send-txt').text('Sent!')
-		setTimeout(@revertSubmitBtn, 1500)
+		@$el.find('.send-txt').text('Message successfully sent!')
+		setTimeout(@revertSubmitBtn, 2000)
 
 	revertSubmitBtn: =>
 		@$el.find('.btn-success').removeClass('btn-success').addClass('btn-danger')
