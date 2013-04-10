@@ -6,3 +6,6 @@ Itech::Application.initialize!
 
 SENDGRID_PASSWORD = 'ig04kw9j'
 SENDGRID_USERNAME = 'app13185324@heroku.com'
+
+ADMIN_CTO = 'daniel.stenger@yahoo.com'
+ADMIN_EMAIL_ADDRESSES = ['aciddaniel@gmail.com']

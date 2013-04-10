@@ -5,8 +5,7 @@ class Itech.Views.SupportErrorView extends Backbone.View
 		"keypress textarea": "hideErrors"
 
 	initialize: (options) ->
-		@el = options.el
-		
+		@el = options.el		
 		@$el.find('.error').removeClass('error')
 		@disableSubmit(true)
 		@errors = $.parseJSON(options.error.responseText)

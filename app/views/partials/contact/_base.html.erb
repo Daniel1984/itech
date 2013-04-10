@@ -13,30 +13,33 @@
 			<form>
 				<div class="control-group span3">
 					<div class="controls">
-						<input class="name" type="text" name="name" placeholder="name *"/>
+						<input class="name" type="text" name="name" maxlength="20" placeholder="name *"/>
 					</div>
 				</div>
 				<div class="control-group span3">
 					<div class="controls">
-						<input class="email" type="text" name="email" placeholder="email *"/>
+						<input class="email" type="text" name="email" maxlength="80" placeholder="email *"/>
 					</div>
 				</div>
 				<div class="control-group span3">
 					<div class="controls">
-						<input class="phone" type="text" name="phone" placeholder="phone"/>
+						<input class="phone" type="text" name="phone" maxlength="20" placeholder="phone"/>
 					</div>
 				</div>
 				<div class="control-group span3">
 					<div class="controls">
-						<input class="company" type="text" name="company" placeholder="company"/>
+						<input class="company" type="text" name="company" maxlength="50" placeholder="company"/>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="controls">
-						<textarea class="body" rows="4" name="body" placeholder="message *"></textarea>
+						<textarea class="body" rows="4" name="body" maxlength="500" placeholder="message *"></textarea>
 					</div>
 				</div>				
-				<button class="btn btn-danger span3 offset4 submit-btn">Submit</button>
+				<button class="btn btn-danger span3 offset4 submit-btn">
+					<span class="send-txt">Send</span>
+					<i class="icon-spinner icon-spin icon-2x"></i>
+				</button>
 			</form>
 		</div>
 	</div>

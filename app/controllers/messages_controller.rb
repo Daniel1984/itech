@@ -7,6 +7,8 @@ class MessagesController < ApplicationController
 		@company = params[:company]
 		@message = Message.new(params[:message])
 		if @message.save
+			UserMailer.submit_confirmation(@message).deliver
+			UserMailer.admin_submit_confirmation(@message).deliver
 			render json: @message, status: :ok
 		else
 			render json: @message.errors, status: 422
