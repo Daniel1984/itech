@@ -1,8 +1,9 @@
-class Itech.Models.TalkToMe extends Backbone.Model
+cclass Itech.Models.TalkToMe extends Backbone.Model
 
 	defaults:
 		title: "Talktome"
 		imgUrl: "assets/work/talk_to_me.png"
+		siteUrl: "http://chat-io.herokuapp.com"
 		tools	: ["Backbone.js", "Node.js", "Express.js", "Github", "Heroku"]
 		about	: "
 			Work in progress.
